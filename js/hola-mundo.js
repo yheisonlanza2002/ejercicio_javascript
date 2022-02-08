@@ -23,20 +23,41 @@ if (genero == "masculino"){
 };
 // ejercicio n° 4
 
-var costo_inicial = "150000";
+// var costo_inicial = "150000";
+// var descuento;
+// var ahorro ;
+
+// if(costo_inicial < 30000){
+//     console.log("usted no tiene descuento");
+// }else
+// if(costo_inicial >= 30000 && costo_inicial < 100000){
+//     descuento = costo_inicial * 0.05;
+//     ahorro = costo_inicial - descuento;
+// }else
+// if(costo_inicial > 100000){
+//     descuento = costo_inicial * 0.10;
+//     ahorro = costo_inicial - descuento;
+// }
+// console.log("el precio inicial es de " + costo_inicial +" el descuemto es de " + descuento + " para un valor de final de " + ahorro)
+
+// nuevo
+
+var costo_inicial = "190000";
 var descuento;
 var ahorro ;
+var descu_5 = 5;
+var descu_10 =10;
 
 if(costo_inicial < 30000){
     console.log("usted no tiene descuento");
 }else
-if(costo_inicial >= 30000 || costo_inicial < 100000){
-    descuento = costo_inicial * 0.05;
+if(costo_inicial >= 30000 && costo_inicial < 100000){
+    descuento = (costo_inicial * descu_5)/100;
     ahorro = costo_inicial - descuento;
+    console.log("El valor es de el producto es " + costo_inicial + " el descuento es de el "  + descu_5  +" % y el total a pagar es de " + ahorro +  " ahore " + descuento + " pesos");
 }else
 if(costo_inicial > 100000){
-    descuento = costo_inicial * 0.10;
+    descuento = (costo_inicial * descu_10)/100;
     ahorro = costo_inicial - descuento;
+    console.log("El valor es de el producto es " + costo_inicial + " el descuento es de el "  + descu_10  +" % y el total a pagar es de " + ahorro +  " ahore " + descuento + " pesos");
 }
-console.log("el precio inicial es de " + costo_inicial +" el descuemto es de " + descuento + " para un valor de final de " + ahorro)
-
